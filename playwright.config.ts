@@ -10,6 +10,7 @@ export default defineConfig({
   use: {
     baseURL: 'https://weather.com',
     trace: 'on-first-retry',
+    navigationTimeout: 60000,
   },
 
   projects: [

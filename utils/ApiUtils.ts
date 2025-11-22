@@ -9,7 +9,7 @@ export class ApiUtils {
     this.apiKey = process.env.API_KEY || '';
   }
 
-a  async getWeatherData(city: string, apiKey: string = this.apiKey) {
+  async getWeatherData(city: string, apiKey: string = this.apiKey) {
     return await this.request.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`);
   }
 

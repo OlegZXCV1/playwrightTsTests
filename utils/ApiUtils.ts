@@ -9,7 +9,11 @@ export class ApiUtils {
     this.apiKey = process.env.API_KEY || '';
   }
 
-  async getWeatherData(city: string) {
-    return await this.request.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.apiKey}`);
+a  async getWeatherData(city: string, apiKey: string = this.apiKey) {
+    return await this.request.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`);
+  }
+
+  async getWeatherDataByCoords(lat: number, lon: number, apiKey: string = this.apiKey) {
+    return await this.request.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`);
   }
 }

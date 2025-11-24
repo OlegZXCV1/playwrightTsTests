@@ -19,12 +19,6 @@ This is a sample test framework using Playwright and TypeScript to run UI and AP
    ```bash
    npm install
    ```
-2. **Set up the API key:**
-   The API tests use the OpenWeatherMap API. You will need to sign up for a free API key at [https://openweathermap.org/](https://openweathermap.org/).
-   Once you have your API key, you can set it as an environment variable:
-   ```bash
-   export API_KEY=your_api_key
-   ```
 
 ## Running the Tests
 

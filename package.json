@@ -6,8 +6,7 @@
   "scripts": {
     "test": "playwright test",
     "test:ui": "playwright test --grep @ui",
-    "test:api": "playwright test --grep @api",
-    "test:cucumber": "cucumber-js"
+    "test:api": "playwright test --grep @api"
   },
   "repository": {
     "type": "git",
@@ -21,10 +20,8 @@
   },
   "homepage": "https://github.com/OlegZXCV1/playwrightTsTests#readme",
   "devDependencies": {
-    "@cucumber/cucumber": "^12.2.0",
     "@playwright/test": "^1.56.1",
     "@types/node": "^24.10.1",
-    "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
 }
